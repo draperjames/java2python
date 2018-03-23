@@ -76,7 +76,11 @@ setup(
     scripts=[
         'bin/j2py',
         ],
-
+    entry_points = {
+            'console_scripts': [
+                'j2py=bin/j2py',
+                ],
+    },
     data_files=[
         ('doc', doc_files()),
         ],
